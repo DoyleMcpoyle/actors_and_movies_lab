@@ -1,0 +1,9 @@
+<h1>Actors</h1>
+
+<ul>
+  <% @actors.each do |film| %>
+  <li><%= link_to "#{film.name}", film %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Add actor", new_actor_path %>
